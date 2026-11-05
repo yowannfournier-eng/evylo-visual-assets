@@ -4,3 +4,5 @@ fs.copyFileSync('evylo-magazine-v24.html','public/evylo-magazine-v24.html');if(!
 fs.copyFileSync('evylo-magazine-v25.html','public/evylo-magazine-v25.html');if(!fs.existsSync('public/evylo-magazine-v25.html'))throw Error('Missing V2.5');
 
 fs.copyFileSync('evylo-magazine-v26.html','public/evylo-magazine-v26.html');if(!fs.existsSync('public/evylo-magazine-v26.html'))throw Error('Missing V2.6');
+
+fs.copyFileSync('evylo-magazine-v27.html','public/evylo-magazine-v27.html');if(!fs.existsSync('public/evylo-magazine-v27.html'))throw Error('Missing V2.7');
