@@ -18,14 +18,29 @@ fs.copyFileSync('evylo-header.jpg','public/evylo-header.jpg');
 // Serve the magazine preview using the approved public images.
 fs.copyFileSync('evylo-magazine-v30.html','public/evylo-magazine-v30.html');
 
-// EVYLO Market Pulse: publish manifest and gallery; extract image archive when uploaded.
+// EVYLO Market Pulse v6: deploy 41 source-verified images from single archive.
 fs.mkdirSync('public/market-pulse',{recursive:true});
-fs.copyFileSync('evylo-market-pulse-registry-v4.json','public/market-pulse/registry.json');
-fs.copyFileSync('evylo-market-pulse-gallery-v4.html','public/market-pulse/index.html');
-const mpZip='EVYLO_Market_Pulse_41_assets_local_et_bloc3.zip';
-if(fs.existsSync(mpZip)){
-  cp.execFileSync('unzip',['-oq',mpZip,'images/*','-d','public/market-pulse'],{stdio:'inherit'});
-  const files=fs.readdirSync('public/market-pulse/images').filter(x=>x.endsWith('.jpg'));
-  if(files.length!==41)throw Error('EVYLO Market Pulse expected 41 images, found '+files.length);
-  console.log('Market Pulse: 41 images extracted');
-}else{console.log('Market Pulse: manifest published, 41 images awaiting ZIP upload');}
+const archive='EVYLO_Market_Pulse_41_FINAL_VALIDATED.zip';
+if (fs.existsSync(archive)){
+  cp.execFileSync('unzip',['-oq',archive,'-d','public/market-pulse'],{stdio:'inherit'});
+  const root='public/market-pulse';
+  const report=JSON.parse(fs.readFileSync(root+'/registry.json','utf8'));
+  const crypto=require('crypto');
+  if(report.assets.length!==41)throw Error('EVYLO expected 41 assets, got '+report.assets.length);
+  const ids=new Set(),shas=new Set();
+  for(const asset of report.assets){
+    if(ids.has(asset.id))throw Error('Duplicate EVYLO asset '+asset.id);
+    ids.add(asset.id);
+    const p=root+'/'+asset.filename;
+    if(!fs.existsSync(p))throw Error('Missing EVYLO image: '+p);
+    const sha=crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+    if(sha!==asset.sha256)throw Error('SHA-256 mismatch for '+asset.id);
+    if(shas.has(sha))throw Error('EVYLO duplicate image '+asset.id);
+    shas.add(sha);
+  }
+  console.log('EVYLO Market Pulse: 41 distinct assets, all SHA-256 verified');
+}else{
+  fs.copyFileSync('evylo-market-pulse-registry-v4.json','public/market-pulse/registry.json');
+  fs.copyFileSync('evylo-market-pulse-gallery-v4.html','public/market-pulse/index.html');
+  console.log('EVYLO Market Pulse HOLD: publish 41-asset ZIP before enabling image gallery');
+}
