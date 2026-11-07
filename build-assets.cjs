@@ -60,3 +60,6 @@ if (fs.existsSync(mpArchive)){
 
 // Approved Le Stratège artwork, cropped without modification from EVYLO signed-off mockup.
 fs.writeFileSync('public/evylo-stratege-portrait.jpg',Buffer.from(fs.readFileSync('evylo-stratege-portrait-base64.txt','utf8').trim(),'base64'));
+
+// Publish original approved Le Stratège portrait for Gmail
+fs.writeFileSync('public/evylo-stratege-approved.jpg',Buffer.from(fs.readFileSync('evylo-stratege-approved.b64.txt','utf8').trim(),'base64'));
