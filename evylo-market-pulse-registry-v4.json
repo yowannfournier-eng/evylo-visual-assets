@@ -1,7 +1,7 @@
 {
   "version": 4,
   "target": "evylo-email-public-assets",
-  "mode": "PREVIEW_NOT_READY",
+  "mode": "HOLD_VISUAL_QA",
   "asset_count": 41,
   "zip_pending": "EVYLO_Market_Pulse_41_assets_local_et_bloc3.zip",
   "message": "Fichiers locaux prêts. Publication binaire Vercel en attente du ZIP dans le dépôt GitHub.",
@@ -10,247 +10,340 @@
       "id": "WTI",
       "label": "Pétrole WTI",
       "src": "/market-pulse/images/wti.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "TEXT_OVERLAY_CORRECTION_REQUIRED"
     },
     {
       "id": "BRENT",
       "label": "Pétrole Brent",
       "src": "/market-pulse/images/brent.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "IMAGE_LOCALLY_AVAILABLE_NOT_UPLOADED"
     },
     {
       "id": "NATGAS",
       "label": "Gaz naturel",
       "src": "/market-pulse/images/natgas.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "IMAGE_LOCALLY_AVAILABLE_NOT_UPLOADED"
     },
     {
       "id": "URANIUM",
       "label": "Uranium",
       "src": "/market-pulse/images/uranium.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "IMAGE_LOCALLY_AVAILABLE_NOT_UPLOADED"
     },
     {
       "id": "COAL",
       "label": "Charbon",
       "src": "/market-pulse/images/coal.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "IMAGE_LOCALLY_AVAILABLE_NOT_UPLOADED"
     },
     {
       "id": "XAU",
       "label": "Or",
       "src": "/market-pulse/images/xau.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "IMAGE_LOCALLY_AVAILABLE_NOT_UPLOADED"
     },
     {
       "id": "XAG",
       "label": "Argent",
       "src": "/market-pulse/images/xag.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "IMAGE_LOCALLY_AVAILABLE_NOT_UPLOADED"
     },
     {
       "id": "PLATINUM",
       "label": "Platine",
       "src": "/market-pulse/images/platinum.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "IMAGE_LOCALLY_AVAILABLE_NOT_UPLOADED"
     },
     {
       "id": "PALLADIUM",
       "label": "Palladium",
       "src": "/market-pulse/images/palladium.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "IMAGE_LOCALLY_AVAILABLE_NOT_UPLOADED"
     },
     {
       "id": "COPPER",
       "label": "Cuivre",
       "src": "/market-pulse/images/copper.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "IMAGE_LOCALLY_AVAILABLE_NOT_UPLOADED"
     },
     {
       "id": "ALUMINUM",
       "label": "Aluminium",
       "src": "/market-pulse/images/aluminum.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "IMAGE_LOCALLY_AVAILABLE_NOT_UPLOADED"
     },
     {
       "id": "NICKEL",
       "label": "Nickel",
       "src": "/market-pulse/images/nickel.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "IMAGE_LOCALLY_AVAILABLE_NOT_UPLOADED"
     },
     {
       "id": "LITHIUM",
       "label": "Lithium",
       "src": "/market-pulse/images/lithium.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "IMAGE_LOCALLY_AVAILABLE_NOT_UPLOADED"
     },
     {
       "id": "SPX",
       "label": "S&P 500",
       "src": "/market-pulse/images/spx.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "IMAGE_LOCALLY_AVAILABLE_NOT_UPLOADED"
     },
     {
       "id": "NDX",
       "label": "Nasdaq",
       "src": "/market-pulse/images/ndx.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "IMAGE_LOCALLY_AVAILABLE_NOT_UPLOADED"
     },
     {
       "id": "DJI",
       "label": "Dow Jones",
       "src": "/market-pulse/images/dji.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "IMAGE_LOCALLY_AVAILABLE_NOT_UPLOADED"
     },
     {
       "id": "TSX",
       "label": "TSX",
       "src": "/market-pulse/images/tsx.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "IMAGE_LOCALLY_AVAILABLE_NOT_UPLOADED"
     },
     {
       "id": "STOXX",
       "label": "Euro Stoxx 50",
       "src": "/market-pulse/images/stoxx.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "IMAGE_LOCALLY_AVAILABLE_NOT_UPLOADED"
     },
     {
       "id": "NIKKEI",
       "label": "Nikkei 225",
       "src": "/market-pulse/images/nikkei.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "IMAGE_LOCALLY_AVAILABLE_NOT_UPLOADED"
     },
     {
       "id": "USD",
       "label": "Dollar US",
       "src": "/market-pulse/images/usd.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "IMAGE_LOCALLY_AVAILABLE_NOT_UPLOADED"
     },
     {
       "id": "CAD",
       "label": "Dollar canadien",
       "src": "/market-pulse/images/cad.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "IMAGE_LOCALLY_AVAILABLE_NOT_UPLOADED"
     },
     {
       "id": "EUR",
       "label": "Euro",
       "src": "/market-pulse/images/eur.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "IMAGE_LOCALLY_AVAILABLE_NOT_UPLOADED"
     },
     {
       "id": "JPY",
       "label": "Yen japonais",
       "src": "/market-pulse/images/jpy.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "IMAGE_LOCALLY_AVAILABLE_NOT_UPLOADED"
     },
     {
       "id": "GBP",
       "label": "Livre sterling",
       "src": "/market-pulse/images/gbp.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "HD_OR_ASSOCIATION_REPLACEMENT_REQUIRED"
     },
     {
       "id": "DXY",
       "label": "Dollar Index DXY",
       "src": "/market-pulse/images/dxy.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "HD_OR_ASSOCIATION_REPLACEMENT_REQUIRED"
     },
     {
       "id": "BTC",
       "label": "Bitcoin",
       "src": "/market-pulse/images/btc.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "HD_OR_ASSOCIATION_REPLACEMENT_REQUIRED"
     },
     {
       "id": "ETH",
       "label": "Ethereum",
       "src": "/market-pulse/images/eth.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "HD_OR_ASSOCIATION_REPLACEMENT_REQUIRED"
     },
     {
       "id": "SOL",
       "label": "Solana",
       "src": "/market-pulse/images/sol.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "HD_OR_ASSOCIATION_REPLACEMENT_REQUIRED"
     },
     {
       "id": "US2Y",
       "label": "Trésor US 2 ans",
       "src": "/market-pulse/images/us2y.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "HD_OR_ASSOCIATION_REPLACEMENT_REQUIRED"
     },
     {
       "id": "US10Y",
       "label": "Trésor US 10 ans",
       "src": "/market-pulse/images/us10y.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "HD_OR_ASSOCIATION_REPLACEMENT_REQUIRED"
     },
     {
       "id": "US30Y",
       "label": "Trésor US 30 ans",
       "src": "/market-pulse/images/us30y.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "HD_OR_ASSOCIATION_REPLACEMENT_REQUIRED"
     },
     {
       "id": "POLICY",
       "label": "Taux directeur Fed",
       "src": "/market-pulse/images/policy.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "HD_OR_ASSOCIATION_REPLACEMENT_REQUIRED"
     },
     {
       "id": "WHEAT",
       "label": "Blé",
       "src": "/market-pulse/images/wheat.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "HD_OR_ASSOCIATION_REPLACEMENT_REQUIRED"
     },
     {
       "id": "CORN",
       "label": "Maïs",
       "src": "/market-pulse/images/corn.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "HD_OR_ASSOCIATION_REPLACEMENT_REQUIRED"
     },
     {
       "id": "SOY",
       "label": "Soja",
       "src": "/market-pulse/images/soy.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "HD_OR_ASSOCIATION_REPLACEMENT_REQUIRED"
     },
     {
       "id": "COFFEE",
       "label": "Café",
       "src": "/market-pulse/images/coffee.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "HD_OR_ASSOCIATION_REPLACEMENT_REQUIRED"
     },
     {
       "id": "COCOA",
       "label": "Cacao",
       "src": "/market-pulse/images/cocoa.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "HD_OR_ASSOCIATION_REPLACEMENT_REQUIRED"
     },
     {
       "id": "SEMIS",
       "label": "Semi-conducteurs",
       "src": "/market-pulse/images/semis.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "HD_OR_ASSOCIATION_REPLACEMENT_REQUIRED"
     },
     {
       "id": "AI",
       "label": "Intelligence artificielle",
       "src": "/market-pulse/images/ai.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "HD_OR_ASSOCIATION_REPLACEMENT_REQUIRED"
     },
     {
       "id": "DEFENSE",
       "label": "Défense",
       "src": "/market-pulse/images/defense.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "HD_OR_ASSOCIATION_REPLACEMENT_REQUIRED"
     },
     {
       "id": "REIT",
       "label": "Immobilier",
       "src": "/market-pulse/images/reit.jpg",
-      "verified_https": false
+      "verified_https": false,
+      "quality_status": "HD_OR_ASSOCIATION_REPLACEMENT_REQUIRED"
     }
-  ]
+  ],
+  "qa_summary": {
+    "date": "2026-11-07",
+    "named_assets": 41,
+    "local_jpg_files": 41,
+    "unique_local_hashes_before_correction": 37,
+    "exact_duplicate_pairs_before_correction": [
+      [
+        "SPX",
+        "US2Y"
+      ],
+      [
+        "DJI",
+        "US30Y"
+      ],
+      [
+        "STOXX",
+        "US10Y"
+      ],
+      [
+        "USD",
+        "DXY"
+      ]
+    ],
+    "independent_source_images": 23,
+    "publish_ready_without_logo": 22,
+    "requires_new_independent_hd": [
+      "GBP",
+      "DXY",
+      "BTC",
+      "ETH",
+      "SOL",
+      "US2Y",
+      "US10Y",
+      "US30Y",
+      "POLICY",
+      "WHEAT",
+      "CORN",
+      "SOY",
+      "COFFEE",
+      "COCOA",
+      "SEMIS",
+      "AI",
+      "DEFENSE",
+      "REIT"
+    ],
+    "requires_textless_version": [
+      "WTI"
+    ],
+    "new_library_images_published": 0,
+    "gmail_android_verified": false,
+    "publication_gate": "Do not claim 41 approved images or send demo until each asset has a corresponding high-resolution image with distinct source and verified HTTPS URL."
+  }
 }
