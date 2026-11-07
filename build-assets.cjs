@@ -63,3 +63,6 @@ fs.writeFileSync('public/evylo-stratege-portrait.jpg',Buffer.from(fs.readFileSyn
 
 // Publish original approved Le Stratège portrait for Gmail
 fs.writeFileSync('public/evylo-stratege-approved.jpg',Buffer.from(fs.readFileSync('evylo-stratege-approved.b64.txt','utf8').trim(),'base64'));
+
+// Render the mobile-first Gmail-compatible EVYLO magazine from four chosen assets.
+cp.execFileSync('node',['evylo-newsletter-renderer-v1.cjs'],{stdio:'inherit'});
