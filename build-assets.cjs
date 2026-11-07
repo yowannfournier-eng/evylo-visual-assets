@@ -57,3 +57,6 @@ if (fs.existsSync(mpArchive)){
   fs.copyFileSync('evylo-market-pulse-gallery-v4.html','public/market-pulse/index.html');
   console.log('EVYLO Market Pulse HOLD: publish 41-asset ZIP before enabling image gallery');
 }
+
+// Approved Le Stratège artwork, cropped without modification from EVYLO signed-off mockup.
+fs.writeFileSync('public/evylo-stratege-portrait.jpg',Buffer.from(fs.readFileSync('evylo-stratege-portrait-base64.txt','utf8').trim(),'base64'));
