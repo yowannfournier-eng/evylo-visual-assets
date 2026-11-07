@@ -1,0 +1,256 @@
+{
+  "version": 4,
+  "target": "evylo-email-public-assets",
+  "mode": "PREVIEW_NOT_READY",
+  "asset_count": 41,
+  "zip_pending": "EVYLO_Market_Pulse_41_assets_local_et_bloc3.zip",
+  "message": "Fichiers locaux prêts. Publication binaire Vercel en attente du ZIP dans le dépôt GitHub.",
+  "assets": [
+    {
+      "id": "WTI",
+      "label": "Pétrole WTI",
+      "src": "/market-pulse/images/wti.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "BRENT",
+      "label": "Pétrole Brent",
+      "src": "/market-pulse/images/brent.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "NATGAS",
+      "label": "Gaz naturel",
+      "src": "/market-pulse/images/natgas.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "URANIUM",
+      "label": "Uranium",
+      "src": "/market-pulse/images/uranium.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "COAL",
+      "label": "Charbon",
+      "src": "/market-pulse/images/coal.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "XAU",
+      "label": "Or",
+      "src": "/market-pulse/images/xau.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "XAG",
+      "label": "Argent",
+      "src": "/market-pulse/images/xag.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "PLATINUM",
+      "label": "Platine",
+      "src": "/market-pulse/images/platinum.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "PALLADIUM",
+      "label": "Palladium",
+      "src": "/market-pulse/images/palladium.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "COPPER",
+      "label": "Cuivre",
+      "src": "/market-pulse/images/copper.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "ALUMINUM",
+      "label": "Aluminium",
+      "src": "/market-pulse/images/aluminum.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "NICKEL",
+      "label": "Nickel",
+      "src": "/market-pulse/images/nickel.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "LITHIUM",
+      "label": "Lithium",
+      "src": "/market-pulse/images/lithium.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "SPX",
+      "label": "S&P 500",
+      "src": "/market-pulse/images/spx.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "NDX",
+      "label": "Nasdaq",
+      "src": "/market-pulse/images/ndx.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "DJI",
+      "label": "Dow Jones",
+      "src": "/market-pulse/images/dji.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "TSX",
+      "label": "TSX",
+      "src": "/market-pulse/images/tsx.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "STOXX",
+      "label": "Euro Stoxx 50",
+      "src": "/market-pulse/images/stoxx.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "NIKKEI",
+      "label": "Nikkei 225",
+      "src": "/market-pulse/images/nikkei.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "USD",
+      "label": "Dollar US",
+      "src": "/market-pulse/images/usd.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "CAD",
+      "label": "Dollar canadien",
+      "src": "/market-pulse/images/cad.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "EUR",
+      "label": "Euro",
+      "src": "/market-pulse/images/eur.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "JPY",
+      "label": "Yen japonais",
+      "src": "/market-pulse/images/jpy.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "GBP",
+      "label": "Livre sterling",
+      "src": "/market-pulse/images/gbp.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "DXY",
+      "label": "Dollar Index DXY",
+      "src": "/market-pulse/images/dxy.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "BTC",
+      "label": "Bitcoin",
+      "src": "/market-pulse/images/btc.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "ETH",
+      "label": "Ethereum",
+      "src": "/market-pulse/images/eth.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "SOL",
+      "label": "Solana",
+      "src": "/market-pulse/images/sol.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "US2Y",
+      "label": "Trésor US 2 ans",
+      "src": "/market-pulse/images/us2y.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "US10Y",
+      "label": "Trésor US 10 ans",
+      "src": "/market-pulse/images/us10y.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "US30Y",
+      "label": "Trésor US 30 ans",
+      "src": "/market-pulse/images/us30y.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "POLICY",
+      "label": "Taux directeur Fed",
+      "src": "/market-pulse/images/policy.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "WHEAT",
+      "label": "Blé",
+      "src": "/market-pulse/images/wheat.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "CORN",
+      "label": "Maïs",
+      "src": "/market-pulse/images/corn.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "SOY",
+      "label": "Soja",
+      "src": "/market-pulse/images/soy.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "COFFEE",
+      "label": "Café",
+      "src": "/market-pulse/images/coffee.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "COCOA",
+      "label": "Cacao",
+      "src": "/market-pulse/images/cocoa.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "SEMIS",
+      "label": "Semi-conducteurs",
+      "src": "/market-pulse/images/semis.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "AI",
+      "label": "Intelligence artificielle",
+      "src": "/market-pulse/images/ai.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "DEFENSE",
+      "label": "Défense",
+      "src": "/market-pulse/images/defense.jpg",
+      "verified_https": false
+    },
+    {
+      "id": "REIT",
+      "label": "Immobilier",
+      "src": "/market-pulse/images/reit.jpg",
+      "verified_https": false
+    }
+  ]
+}
