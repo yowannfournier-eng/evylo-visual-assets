@@ -17,3 +17,15 @@ fs.copyFileSync('evylo-header.jpg','public/evylo-header.jpg');
 
 // Serve the magazine preview using the approved public images.
 fs.copyFileSync('evylo-magazine-v30.html','public/evylo-magazine-v30.html');
+
+// EVYLO Market Pulse: publish manifest and gallery; extract image archive when uploaded.
+fs.mkdirSync('public/market-pulse',{recursive:true});
+fs.copyFileSync('evylo-market-pulse-registry-v4.json','public/market-pulse/registry.json');
+fs.copyFileSync('evylo-market-pulse-gallery-v4.html','public/market-pulse/index.html');
+const mpZip='EVYLO_Market_Pulse_41_assets_local_et_bloc3.zip';
+if(fs.existsSync(mpZip)){
+  cp.execFileSync('unzip',['-oq',mpZip,'images/*','-d','public/market-pulse'],{stdio:'inherit'});
+  const files=fs.readdirSync('public/market-pulse/images').filter(x=>x.endsWith('.jpg'));
+  if(files.length!==41)throw Error('EVYLO Market Pulse expected 41 images, found '+files.length);
+  console.log('Market Pulse: 41 images extracted');
+}else{console.log('Market Pulse: manifest published, 41 images awaiting ZIP upload');}
