@@ -10,3 +10,7 @@ fs.copyFileSync('evylo-magazine-v27.html','public/evylo-magazine-v27.html');if(!
 fs.copyFileSync('evylo-magazine-v28.html','public/evylo-magazine-v28.html');if(!fs.existsSync('public/evylo-magazine-v28.html'))throw Error('Missing V2.8');
 
 fs.copyFileSync('evylo-magazine-v29.html','public/evylo-magazine-v29.html');if(!fs.existsSync('public/evylo-magazine-v29.html'))throw Error('Missing V2.9');
+
+// Publish the approved, unmodified EVYLO header for email clients.
+if(!fs.existsSync('evylo-header.jpg'))throw Error('Missing approved evylo-header.jpg');
+fs.copyFileSync('evylo-header.jpg','public/evylo-header.jpg');
