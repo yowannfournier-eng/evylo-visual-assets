@@ -14,3 +14,6 @@ fs.copyFileSync('evylo-magazine-v29.html','public/evylo-magazine-v29.html');if(!
 // Publish the approved, unmodified EVYLO header for email clients.
 if(!fs.existsSync('evylo-header.jpg'))throw Error('Missing approved evylo-header.jpg');
 fs.copyFileSync('evylo-header.jpg','public/evylo-header.jpg');
+
+// Serve the magazine preview using the approved public images.
+fs.copyFileSync('evylo-magazine-v30.html','public/evylo-magazine-v30.html');
