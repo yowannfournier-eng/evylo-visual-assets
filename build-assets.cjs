@@ -21,8 +21,21 @@ fs.copyFileSync('evylo-magazine-v30.html','public/evylo-magazine-v30.html');
 // EVYLO Market Pulse v6: deploy 41 source-verified images from single archive.
 fs.mkdirSync('public/market-pulse',{recursive:true});
 const archive='EVYLO_Market_Pulse_41_FINAL_VALIDATED.zip';
-if (fs.existsSync(archive)){
-  cp.execFileSync('unzip',['-oq',archive,'-d','public/market-pulse'],{stdio:'inherit'});
+const mpSegments=Array.from({length:10},(_,i)=>'marketpulse_payload/part'+String(i+1).padStart(2,'0')+'.txt');
+let mpArchive=archive;
+if(!fs.existsSync(archive) && mpSegments.every(p=>fs.existsSync(p))){
+  const crypto=require('crypto');
+  const b64=mpSegments.map(p=>fs.readFileSync(p,'utf8').trim()).join('');
+  const payload=Buffer.from(b64,'base64');
+  const digest=crypto.createHash('sha256').update(payload).digest('hex');
+  const expected='0f67c9906c693997694792ca1a6a6bb4983a5a850854a1e7b015bfd062cc26c0';
+  if(digest!==expected)throw Error('EVYLO Market Pulse archive SHA-256 mismatch: '+digest);
+  mpArchive='/tmp/evylo-market-pulse-41-final.zip';
+  fs.writeFileSync(mpArchive,payload);
+  console.log('EVYLO Market Pulse archive reconstructed from 10 verified GitHub segments: '+payload.length+' bytes');
+}
+if (fs.existsSync(mpArchive)){
+  cp.execFileSync('unzip',['-oq',mpArchive,'-d','public/market-pulse'],{stdio:'inherit'});
   const root='public/market-pulse';
   const report=JSON.parse(fs.readFileSync(root+'/registry.json','utf8'));
   const crypto=require('crypto');
