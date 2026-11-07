@@ -1,0 +1,7 @@
+# EVYLO — Market Pulse: état de validation des 41 actifs (7 nov. 2026)
+
+Statut: **HOLD_VISUAL_QA**. La bibliothèque locale a 41 JPG mais l'audit a identifié 37 contenus distincts avant correction, 4 paires de copies exactes, 9 vignettes associées au mauvais sujet, et des agrandissements basse résolution. Les 41 associations ont été corrigées dans un paquet de travail local, mais 18 sujets reposent encore sur des aperçus recadrés et WTI contient du texte incrusté. Seulement 22 visuels indépendants sont acceptables comme bases HD sans texte. Aucun des 41 JPG n'a été publié sur le nouveau chemin Vercel.
+
+**Manquent avant finalisation**: 18 photos individuelles HD à remplacer (GBP, DXY, BTC, ETH, SOL, US2Y, US10Y, US30Y, POLICY, WHEAT, CORN, SOY, COFFEE, COCOA, SEMIS, AI, DEFENSE, REIT), WTI sans texte incrusté, puis upload groupé du ZIP, inspection HTTPS de chaque asset, et test réel Gmail Android.
+
+Le projet **ne doit pas être promu en "41/41 validé"** tant que le manifeste de vérification n'atteste pas des 41 correspondances, de la résolution et des chargements HTTPS. Conserver les doublons et les anciens aperçus dans l'archive des 5 000 photos, mais ne pas les compter comme images dédiées validées.
